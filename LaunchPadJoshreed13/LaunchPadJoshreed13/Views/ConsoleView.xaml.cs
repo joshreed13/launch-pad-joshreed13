@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LaunchPadJoshreed13.ViewModels;
 
 namespace LaunchPadJoshreed13.Views
 {
@@ -23,6 +24,7 @@ namespace LaunchPadJoshreed13.Views
         public ConsoleView()
         {
             InitializeComponent();
+            this.DataContext = new ConsoleViewModel();
         }
     }
 }
