@@ -14,17 +14,17 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using LaunchPadJoshreed13.ViewModels;
 
-namespace LaunchPadJoshreed13
+namespace LaunchPadJoshreed13.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ConsoleView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ConsoleView : UserControl
     {
-        public MainWindow()
+        public ConsoleView()
         {
             InitializeComponent();
-            this.DataContext = new MainWindowViewModel();
+            this.DataContext = new ConsoleViewModel();
         }
     }
 }
