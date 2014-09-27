@@ -62,6 +62,7 @@ namespace LaunchPadJoshreed13.ViewModels
         public RoverViewModel()
         {
             Model = new RoverModel();
+            RoverName = "Phoenix 1.5";
         }
 
         public void Rove()
