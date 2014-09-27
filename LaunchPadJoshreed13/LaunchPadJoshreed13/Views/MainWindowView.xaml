@@ -8,6 +8,9 @@
         <DataTemplate DataType="{x:Type LaunchPadJoshreed13ViewModels:ConsoleViewModel}">
             <LaunchPadJoshreed13Views:ConsoleView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type LaunchPadJoshreed13ViewModels:RoverViewModel}">
+            <LaunchPadJoshreed13Views:RoverView/>
+        </DataTemplate>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
