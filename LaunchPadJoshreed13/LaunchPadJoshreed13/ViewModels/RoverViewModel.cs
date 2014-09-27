@@ -11,5 +11,10 @@ namespace LaunchPadJoshreed13.ViewModels
         {
             Model = new RoverModel();
         }
+
+        public void Rove()
+        {
+
+        }
     }
 }
