@@ -5,6 +5,7 @@ namespace LaunchPadJoshreed13.ViewModels
 {
     class ConsoleViewModel : PropertyChangedBase
     {
+        private MainWindowViewModel MainWindowVM;
         private ConsoleModel Model;
 
         public string Text
@@ -20,8 +21,9 @@ namespace LaunchPadJoshreed13.ViewModels
             }
         }
 
-        public ConsoleViewModel()
+        public ConsoleViewModel(MainWindowViewModel MainWinVM)
         {
+            MainWindowVM = MainWinVM;
             Model = new ConsoleModel();
             Text = "asdfjkl;";
         }

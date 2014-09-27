@@ -6,6 +6,7 @@ namespace LaunchPadJoshreed13.ViewModels
 {
     class RoverViewModel : PropertyChangedBase
     {
+        private MainWindowViewModel MainWindowVM;
         private RoverModel Model;
 
         public string RoverName
@@ -60,8 +61,9 @@ namespace LaunchPadJoshreed13.ViewModels
             }
         }
 
-        public RoverViewModel()
+        public RoverViewModel(MainWindowViewModel MainWinVM)
         {
+            MainWindowVM = MainWinVM;
             Model = new RoverModel();
             RoverName = "Phoenix 1.5";
         }

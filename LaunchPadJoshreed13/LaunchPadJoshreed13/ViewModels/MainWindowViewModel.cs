@@ -36,8 +36,8 @@ namespace LaunchPadJoshreed13.ViewModels
         public MainWindowViewModel()
         {
             Model = new MainWindowModel();
-            Model.console = new ConsoleViewModel();
-            Model.rover = new RoverViewModel();
+            Model.console = new ConsoleViewModel(this);
+            Model.rover = new RoverViewModel(this);
         }
     }
 }
