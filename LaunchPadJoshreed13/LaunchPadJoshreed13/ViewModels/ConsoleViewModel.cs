@@ -25,5 +25,20 @@ namespace LaunchPadJoshreed13.ViewModels
             Model = new ConsoleModel();
             Text = "asdfjkl;";
         }
+
+        public void Clear()
+        {
+            Text = string.Empty;
+        }
+
+        public void Connect()
+        {
+            Text += "Connected!" + System.Environment.NewLine;
+        }
+
+        public void Disconnect()
+        {
+            Text += "Disconnected!" + System.Environment.NewLine;
+        }
     }
 }
