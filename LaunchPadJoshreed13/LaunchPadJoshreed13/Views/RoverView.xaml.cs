@@ -11,7 +11,6 @@ namespace LaunchPadJoshreed13.Views
         public RoverView()
         {
             InitializeComponent();
-            this.DataContext = new RoverViewModel();
         }
     }
 }
