@@ -1,4 +1,5 @@
 ﻿using System.Windows.Controls;
+using LaunchPadJoshreed13.ViewModels;
 
 namespace LaunchPadJoshreed13.Views
 {
@@ -10,6 +11,7 @@ namespace LaunchPadJoshreed13.Views
         public RoverView()
         {
             InitializeComponent();
+            this.DataContext = new RoverViewModel();
         }
     }
 }
