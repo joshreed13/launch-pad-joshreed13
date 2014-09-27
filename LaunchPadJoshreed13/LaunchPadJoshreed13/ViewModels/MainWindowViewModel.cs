@@ -20,10 +20,24 @@ namespace LaunchPadJoshreed13.ViewModels
             }
         }
 
+        public RoverViewModel Rover
+        {
+            get
+            {
+                return Model.rover;
+            }
+            set
+            {
+                Model.rover = value;
+                NotifyOfPropertyChange(() => Rover);
+            }
+        }
+
         public MainWindowViewModel()
         {
             Model = new MainWindowModel();
             Model.console = new ConsoleViewModel();
+            Model.rover = new RoverViewModel();
         }
     }
 }
