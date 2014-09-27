@@ -25,7 +25,12 @@ namespace LaunchPadJoshreed13.ViewModels
         {
             MainWindowVM = MainWinVM;
             Model = new ConsoleModel();
-            Text = "asdfjkl;";
+            WriteLine("asdfjkl;");
+        }
+
+        public void WriteLine(string text)
+        {
+            Text += text + System.Environment.NewLine;
         }
 
         public void Clear()
@@ -35,12 +40,12 @@ namespace LaunchPadJoshreed13.ViewModels
 
         public void Connect()
         {
-            Text += "Connected!" + System.Environment.NewLine;
+            WriteLine("Connected!");
         }
 
         public void Disconnect()
         {
-            Text += "Disconnected!" + System.Environment.NewLine;
+            WriteLine("Disconnected!");
         }
     }
 }
