@@ -1,8 +1,15 @@
 ﻿<Window x:Class="LaunchPadJoshreed13.MainWindow"
+        xmlns:LaunchPadJoshreed13Views="clr-namespace:LaunchPadJoshreed13.Views"
+        xmlns:LaunchPadJoshreed13ViewModels="clr-namespace:LaunchPadJoshreed13.ViewModels"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type LaunchPadJoshreed13ViewModels:ConsoleViewModel}">
+            <LaunchPadJoshreed13Views:ConsoleView/>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
-        
+        <ContentControl x:Name="Console" Content="ContentControl" HorizontalAlignment="Left" Margin="237,99,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
