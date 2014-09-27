@@ -6,6 +6,17 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="RoverName" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="RoverName" />
+        <TextBlock x:Name="Speed" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="Speed" />
+        <TextBlock x:Name="Temperature" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="Temperature" />
+        <TextBlock x:Name="IsConnected" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="IsConnected" />
+        <Button x:Name="Rove" Content="Rove" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Width="75"/>
     </Grid>
 </UserControl>
