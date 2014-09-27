@@ -40,11 +40,13 @@ namespace LaunchPadJoshreed13.ViewModels
 
         public void Connect()
         {
+            MainWindowVM.Rover.IsConnected = true;
             WriteLine("Connected!");
         }
 
         public void Disconnect()
         {
+            MainWindowVM.Rover.IsConnected = false;
             WriteLine("Disconnected!");
         }
     }
