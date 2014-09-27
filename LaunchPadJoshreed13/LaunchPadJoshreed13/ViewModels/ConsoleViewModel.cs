@@ -23,6 +23,7 @@ namespace LaunchPadJoshreed13.ViewModels
         public ConsoleViewModel()
         {
             Model = new ConsoleModel();
+            Text = "asdfjkl;";
         }
     }
 }
