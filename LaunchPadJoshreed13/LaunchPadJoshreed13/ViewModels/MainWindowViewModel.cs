@@ -7,9 +7,23 @@ namespace LaunchPadJoshreed13.ViewModels
     {
         private MainWindowModel Model;
 
+        public ConsoleViewModel Console
+        {
+            get
+            {
+                return Model.console;
+            }
+            set
+            {
+                Model.console = value;
+                NotifyOfPropertyChange(() => Console);
+            }
+        }
+
         public MainWindowViewModel()
         {
             Model = new MainWindowModel();
+            Model.console = new ConsoleViewModel();
         }
     }
 }
