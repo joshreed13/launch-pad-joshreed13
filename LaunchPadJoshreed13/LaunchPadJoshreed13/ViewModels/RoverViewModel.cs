@@ -74,6 +74,7 @@ namespace LaunchPadJoshreed13.ViewModels
             {
                 Task.Run(async () =>
                 {
+                    MainWindowVM.Console.WriteLine("Roving Initiated");
                     Speed = 0;
                     Temperature = 50;
                     for (var i = 0; i < 15; i++)
@@ -88,8 +89,11 @@ namespace LaunchPadJoshreed13.ViewModels
                         Temperature -= Speed / 4;
                         await Task.Delay(200);
                     }
+                    MainWindowVM.Console.WriteLine("Roving Halted");
                 });
             }
+            else
+                MainWindowVM.Console.WriteLine("404 Rover Not Found");
         }
     }
 }
