@@ -1,5 +1,6 @@
 ﻿using Caliburn.Micro;
 using LaunchPadJoshreed13.Models;
+using System.Threading.Tasks;
 
 namespace LaunchPadJoshreed13.ViewModels
 {
@@ -67,7 +68,26 @@ namespace LaunchPadJoshreed13.ViewModels
 
         public void Rove()
         {
-
+            if (IsConnected)
+            {
+                Task.Run(async () =>
+                {
+                    Speed = 0;
+                    Temperature = 50;
+                    for (var i = 0; i < 15; i++)
+                    {
+                        Speed = i;
+                        Temperature += Speed / 4;
+                        await Task.Delay(200);
+                    }
+                    for (var i = 14; i >= 0; i--)
+                    {
+                        Speed = i;
+                        Temperature -= Speed / 4;
+                        await Task.Delay(200);
+                    }
+                });
+            }
         }
     }
 }
