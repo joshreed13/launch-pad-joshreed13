@@ -1,4 +1,4 @@
-﻿<Window x:Class="LaunchPadJoshreed13.MainWindow"
+﻿<Window x:Class="LaunchPadJoshreed13.Views.MainWindowView"
         xmlns:LaunchPadJoshreed13Views="clr-namespace:LaunchPadJoshreed13.Views"
         xmlns:LaunchPadJoshreed13ViewModels="clr-namespace:LaunchPadJoshreed13.ViewModels"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
