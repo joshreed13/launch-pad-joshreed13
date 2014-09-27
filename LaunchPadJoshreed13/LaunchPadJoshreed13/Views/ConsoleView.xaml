@@ -16,8 +16,8 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <TextBlock x:Name="Text" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" Text="TextBlock" Background="Black" Foreground="White" FontFamily="Lucida Console" />
-        <Button Content="Clear" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Connect" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="75"/>
-        <Button Content="Disconnect" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Clear" Content="Clear" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Connect" Content="Connect" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Disconnect" Content="Disconnect" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="75"/>
     </Grid>
 </UserControl>
